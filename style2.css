@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.card1{
+    height: 160px;
+    width: 160px;
+    background-color: aqua;
+    color: blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid black;
+    
+    
+
+
+}
+.Card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    
+}
