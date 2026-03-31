@@ -39,20 +39,20 @@
 
 // weather();
 
-async function idontKnow() {
-  let tannuShri = new Promise((res, rej) => {
-    setTimeout(() => {
-      res("Actually she Never Promised Anything");
-    }, 2000);
-  });
-  let himanshuS = new Promise((res, rej) => {
-    setTimeout(() => {
-      res("Lots of promises everyTime, Which was never needed");
-    }, 3000);
-  });
-  let goodForHer = await tannuShri;
-  let badLuckInLove = await himanshuS;
-  return [goodForHer, badLuckInLove];
-}
+// async function idontKnow() {
+//   let tannuShri = new Promise((res, rej) => {
+//     setTimeout(() => {
+//       res("Actually she Never Promised Anything");
+//     }, 2000);
+//   });
+//   let himanshuS = new Promise((res, rej) => {
+//     setTimeout(() => {
+//       res("Lots of promises everyTime, Which was never needed");
+//     }, 3000);
+//   });
+//   let goodForHer = await tannuShri;
+//   let badLuckInLove = await himanshuS;
+//   return [goodForHer, badLuckInLove];
+// }
 
-console.log(idontKnow());
+// console.log(idontKnow());

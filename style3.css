@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.keys {
+  height: 100px;
+  width: 100px;
+  padding: 15px;
+  margin-right: 15px;
+  margin-top: 300px;
+  justify-content: space-around;
+}
+#grey {
+  background-color: grey;
+  border-radius: 50%;
+  image-resolution: inherit;
+}
+#yellow {
+  background-color: yellow;
+  border-radius: 50%;
+}
+#blue {
+  background-color: blue;
+  border-radius: 50%;
+}
+#red {
+  background-color: red;
+  border-radius: 50%;
+}

@@ -651,7 +651,7 @@ const num = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 //   return abc(acc + curr);
 // };
 // console.log(newNum(num));
-const total = background.reduce((initial, price) => {
-  return initial + price.price;
-}, 0);
-console.log(total);
+// const total = background.reduce((initial, price) => {
+//   return initial + price.price;
+// }, 0);
+// console.log(total);

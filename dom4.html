@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>Document</title>
+    <link rel="stylesheet" href="style3.css" />
+  </head>
+  <body>
+    <button id="grey" class="keys">
+      <image
+        src="https://images.pexels.com/photos/35411162/pexels-photo-35411162.jpeg"
+      ></image>
+      grey</button
+    ><button id="yellow" class="keys">yellow</button
+    ><button id="blue" class="keys">blue</button
+    ><button id="red" class="keys">red</button>
+  </body>
+  <script>
+    const key = document.querySelectorAll(".keys");
+    const body = document.querySelector("body");
+    key.forEach(function (keys) {
+      keys.addEventListener("click", function (e) {
+        if (e.target.id === "grey") {
+          body.style.backgroundColor = "grey";
+        }
+        if (e.target.id === "yellow") {
+          body.style.backgroundColor = "yellow";
+        }
+        if (e.target.id === "blue") {
+          body.style.backgroundColor = "blue";
+        }
+        if (e.target.id === "red") {
+          body.style.backgroundColor = "red";
+        }
+      });
+    });
+  </script>
+</html>

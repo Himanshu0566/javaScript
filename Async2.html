@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Focus</title>
+  </head>
+  <body>
+    <h1>Himanshu Kumar Singh</h1>
+    <button id="stop">Stop</button>
+  </body>
+  <script>
+    const chnageName = function () {
+      document.querySelector("h1").innerHTML = "Keep Focus";
+      // document.querySelector("h1").style.color = "white";
+    };
+    const changeBgColor = function () {
+      document.querySelector("body").style.backgroundColor = "black";
+    };
+    const abc = setTimeout(chnageName, 3000);
+    // const stopping = function () {
+
+    //   setTimeout(changeBgColor, 3000);
+    // };
+
+    // stopping();
+    document.querySelector("#stop").addEventListener("click", function () {
+      clearTimeout(abc);
+      console.log("Stopped");
+    });
+  </script>
+</html>

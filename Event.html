@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>Event</title>
+  </head>
+  <body>
+    <ul id="images">
+      <li>
+        <img
+          width="150px"
+          height="150px"
+          id="pic1"
+          src="https://images.pexels.com/photos/35411162/pexels-photo-35411162.jpeg"
+          alt=""
+        />
+      </li>
+      <li>
+        <img
+          width="150px"
+          height="150px"
+          id="pic2"
+          src="https://images.pexels.com/photos/36048728/pexels-photo-36048728.jpeg"
+          alt=""
+        />
+      </li>
+      <li>
+        <img
+          width="150px"
+          height="150px"
+          id="pic3"
+          src="https://images.pexels.com/photos/36043291/pexels-photo-36043291.jpeg"
+          alt=""
+        />
+      </li>
+      <li>
+        <img
+          width="150px"
+          height="150px"
+          id="pic4"
+          src="https://images.pexels.com/photos/3022417/pexels-photo-3022417.jpeg"
+          alt=""
+        />
+      </li>
+    </ul>
+  </body>
+  <script>
+    // there are two types of event propogation
+    // 1) Bubble event:- In this type of event propogation the propogation happen from bottom to top and it is the defalut property
+    //2) Capture Event: In this type of propogation, the propogation happend from top to bottom and for this we have to pass the third parameter as true
+
+    document.getElementById("images").addEventListener(
+      "click",
+      function (e) {
+        console.log("clicked inside the iamge");
+      },
+      false,
+    );
+    document.getElementById("pic2").addEventListener(
+      "click",
+      function (e) {
+        console.log("pic2 clicked");
+        e.preventDefault();
+        e.stopPropagation();
+      },
+      false,
+    );
+  </script>
+</html>
