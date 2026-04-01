@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Closure and lexical scoping</title>
+  </head>
+  <body style="background-color: #212121; color: #fff">
+    <h1>Learing closure and Lexical scoping</h1>
+  </body>
+  <script>
+    function outerFun() {
+      let name = "rahul";
+      function innerFun() {
+        console.log(name);
+      }
+      innerFun();
+    }
+    outerFun();
+  </script>
+  <script>
+    function makeFunc() {
+      const name = "Mozilla";
+      function displayName() {
+        console.log(name);
+      }
+      return displayName;
+    }
+
+    const myFunc = makeFunc();
+    myFunc();
+  </script>
+  <script>
+    //         //==========> laxical scoping
+    // 1) Scope decleared inside the parent function can
+    //     be accessed by the child function
+    //  2) Siblings function do not share the scopes
+    //  3) Scope decread inside the child function can not be accessed by the parent
+    //     function =========> Closure
+    //  1) when makeFunc() is executed then myFunc do not
+    //     only store the return statement of which is here the refrence of the displayName
+    //     it store the whole lexical scope of that function which is makeFunc()
+    //  2) It does
+    //     not only store the value of executional function of the inside function but also
+    //     the whole lexical function
+    //
+  </script>
+</html>
