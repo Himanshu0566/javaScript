@@ -388,6 +388,7 @@
 
 //! Object==============>>>>>>>>>>>>
 //? Object Singleton
+
 //? object.create
 
 //? Object Literals
