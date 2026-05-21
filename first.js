@@ -500,7 +500,7 @@
 //   console.log(`${name} Debuge`);
 // })("Kunal");
 
-//!Global ecution context and functional ecution context
+//!Global exicution context and functional exicution context
 //? Eval Exicution context
 //? 1 Memory Phase
 //? 2 Execution Phase
@@ -571,9 +571,9 @@ const arr = ["js", "ruby", "cpp", "java", "python"];
 //   console.log(val);
 // }
 // arr.forEach(printME);
-//? In forEach() loop each element of the array will be taken as the parameter in the in the call back function
-//? and the call back function do not have the name in it
-//? Now forEach loop have the access of the three things of the array item,index,and array itself
+//? In forEach() loop each element of the array will be taken as the parameter in the in the call back function.
+//? and the call back function do not have the name in it.
+//? Now forEach loop have the access of the three things of the array item,index,and array itself.
 //! To print any particular Element of the arr
 // arr.forEach((val, index, arr) => {
 //   if (index == 2) {

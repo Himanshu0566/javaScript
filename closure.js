@@ -7,6 +7,7 @@ function closure() {
   return inner();
 }
 
-closure();
-closure();
-closure();
+const counter = closure();
+counter();
+counter();
+counter();
